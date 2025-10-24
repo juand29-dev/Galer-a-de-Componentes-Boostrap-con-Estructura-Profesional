@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <br />
+    <h1 class="text-center">Hello Bootstrap!</h1>
+
+    <br />
+
+    <div class="container">
+        <h2>Accordion component</h2>
+        <br />
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Que es ?
+          </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Este es el cuerpo del primer elemento del acordeón.</strong> Se muestra por defecto hasta que el plugin de colapso añade las clases correspondientes que usamos para dar estilo a cada elemento. Estas clases controlan la
+                        apariencia general, así como la muestra y el ocultamiento mediante transiciones CSS. Puedes modificar cualquiera de esto con CSS personalizado o sobrescribiendo nuestras variables por defecto. También vale la pena notar que casi
+                        cualquier HTML puede ir dentro de <code>.accordion-body</code>, aunque la transición limita el overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Como funciona ?
+          </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Este es el cuerpo del segundo elemento del acordeón.</strong> Está oculto por defecto hasta que el plugin de colapso añade las clases apropiadas que usamos para estilizar cada elemento. Estas clases controlan la apariencia
+                        general, así como la visualización y ocultamiento mediante transiciones CSS. Puedes modificar cualquiera de esto con CSS personalizado o sobrescribiendo nuestras variables por defecto. También es importante notar que casi cualquier
+                        HTML puede ir dentro de <code>.accordion-body</code>, aunque la transición limita el overflow.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Funcion
+          </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Este es el cuerpo del tercer elemento del acordeón.</strong> Está oculto por defecto hasta que el plugin de colapso añade las clases que usamos para dar estilo a cada elemento. Estas clases controlan la apariencia general,
+                        así como la visualización y el ocultamiento mediante transiciones CSS. Puedes modificar cualquiera de esto con CSS personalizado o sobrescribiendo nuestras variables por defecto. También es importante notar que casi cualquier HTML
+                        puede ir dentro de <code>.accordion-body</code>, aunque la transición limita el overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="container">
+        <h2>Alert component</h2>
+        <br />
+        <h5>Muestra mensajes informativos, de éxito, advertencia, error o neutros. Pueden ser dismissible (cerrables). y sirve para la Retroalimentación inmediata tras acciones: formularios enviados, errores, confirmaciones.</h5>
+        <br />
+        <h4>Ejemplo de uso: </h4>
+        <div class="alert alert-danger" role="alert">
+            Una alerta de peligro simple — ¡échale un vistazo!
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <div class="container">
+        <h2>Notificaciones</h2>
+        <br />
+
+        <h5>Pequeña etiqueta o contador que suele adjuntarse a botones o títulos. y sirve para mostrar cantidades (notificaciones), estados (nuevo, beta) o resaltar etiquetas.</h5>
+        <br />
+        <button type="button" class="btn btn-primary position-relative me-4">
+      Perfil
+      <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+        <span class="visually-hidden">Nuevas alertas</span>
+      </span>
+    </button>
+
+        <button type="button" class="btn btn-primary position-relative">
+      Bandeja de entrada
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        99+
+        <span class="visually-hidden">mensajes sin leer</span>
+      </span>
+    </button>
+    </div>
+    <br />
+    <br />
+    <div class="container">
+        <br />
+        <br />
+        <h2>Migaja de pan</h2>
+        <br />
+        <h5>Muestra la ruta jerárquica de la página actual dentro del sitio (ej.: Inicio > Categoría > Producto). Y a su vez sirve para la navegación secundaria y orientación en sitios con estructura profunda.</h5>
+
+        <br>
+
+        <h4>Ejemplo de uso: </h4>
+        <br>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+            </ol>
+        </nav>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Biblioteca</li>
+            </ol>
+        </nav>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="#">Biblioteca</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Datos</li>
+            </ol>
+        </nav>
+    </div>
+    <br />
+    <br />
+
+    <div class="container">
+        <br /><br />
+        <h1>Button Components</h1>
+        <br />
+        <h4>
+            Elementos fundamentales de la interfaz que responden a las interacciones del usuario. Diseñados para ejecutar acciones específicas como envío de datos, apertura de ventanas o navegación entre páginas.
+        </h4>
+        <br />
+        <h3>EJEMPLO:</h3>
+
+        <div class="d-grid gap-4 d-md-flex">
+            <button type="button" class="btn btn-primary">Primario</button>
+            <button type="button" class="btn btn-secondary">Secundario</button>
+            <button type="button" class="btn btn-success">Éxito</button>
+            <button type="button" class="btn btn-danger">Peligro</button>
+            <button type="button" class="btn btn-link">Enlace</button>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="container">
+        <br /><br />
+        <h1>Button group Components</h1>
+        <br />
+        <h4>
+            Conjunto de botones relacionados que se presentan de manera unificada, ideal para crear menús de opciones, barras de herramientas o grupos de acciones relacionadas entre sí.
+            <br> <br>
+            <h3>EJEMPLO:</h3>
+            <br />
+            <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                <button type="button" class="btn btn-outline-primary">Izquierda</button>
+                <button type="button" class="btn btn-outline-primary">Centro</button>
+                <button type="button" class="btn btn-outline-primary">Derecha</button>
+            </div>
+            <br />
+            <br />
+            <div class="btn-group" role="group" aria-label="Default button group"></div>
+            <button type="button" class="btn btn-outline-primary">Izquierda</button>
+            <button type="button" class="btn btn-outline-primary">Centro</button>
+            <button type="button" class="btn btn-outline-primary">Derecha</button>
+    </div>
+    <br><br>
+
+    <div class="container">
+        <br>
+        <h1>Cards Components</h1>
+        <br>
+        <h4>
+            Contenedores versátiles que organizan información relacionada en un formato visual atractivo. Perfectos para destacar contenido importante como artículos, productos o perfiles de usuario.
+        </h4>
+        <br> <br>
+        <h3>EJEMPLO:</h3>
+        <br>
+        <div class="d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+                <img src="assets/2.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title"> Título de la tarjeta </h5>
+                    <p class="card-text">
+                        Un texto de ejemplo rápido para ampliar el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.
+                    </p>
+                    <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="container">
+            <h1>Close button Components</h1>
+            <h4>
+                Elemento de interfaz minimalista que proporciona una forma intuitiva de cerrar o descartar elementos interactivos. Su diseño universal facilita la comprensión inmediata de su función.
+            </h4>
+            <h4>Un botón de cierre genérico para descartar contenido como modales y alertas.</h4>
+            <br>
+            <h3>EJEMPLO:</h3>
+            <br>
+            <br>
+            <div class="text-center">
+                <button type="button" class="btn-close" aria-label="Close" style="transform: scale(3.5);"></button>
+            </div>
+            <br><br>
+
+            <div class="container">
+                <br>
+                <br>
+                <h1>Collapse Components</h1>
+                <br>
+                <h4>
+                    Mecanismo dinámico que permite expandir y contraer secciones de contenido, optimizando el espacio en pantalla y mejorando la organización visual de la información.
+                </h4>
+                <br>
+                <br>
+
+                <div id="collapseElementList"></div>
+                <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Alternar primer elemento</a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Alternar
+            segundo elemento</button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Alternar ambos
+            elementos</button>
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                                Contenido de ejemplo para el primer componente de colapso de este ejemplo de multi-colapso. Este panel está oculto por defecto pero se revela cuando el usuario activa el disparador correspondiente.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="card card-body">
+                                Contenido de ejemplo para el segundo componente de colapso de este ejemplo de multi-colapso. Este panel está oculto por defecto pero se revela cuando el usuario activa el disparador correspondiente.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="container">
+            <br><br>
+            <h1>Dropdowns</h1>
+            <br><br>
+            <h4>
+                Menús desplegables que revelan opciones adicionales al interactuar con un elemento principal. Optimizan el espacio y simplifican la navegación en interfaces complejas.
+            </h4>
+            <br><br>
+
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Botón grande
+        </button>
+                <ul class="dropdown-menu">
+                    ...
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-lg" type="button">
+          Botón grande dividido
+        </button>
+                <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Alternar desplegable</span>
+        </button>
+                <ul class="dropdown-menu">
+                    ...
+                    <div id="dropdownElementList"> </div>
+                </ul>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <div class="container">
+        <br><br>
+        <h1>List group</h1>
+        <br><br>
+        <h4>
+            Sistema de presentación que transforma listas simples en componentes visuales estructurados. Perfecto para mostrar colecciones de elementos como menús, notificaciones o listados de contenido.
+        </h4>
+        <br><br>
+        <ul class="list-group">
+            <li class="list-group-item">Un elemento</li>
+            <li class="list-group-item">Un segundo elemento</li>
+            <li class="list-group-item">Un tercer elemento</li>
+        </ul>
+        <br><br>
+    </div>
+    <br />
+    <br />
+
+    <div class="container">
+        <br><br>
+        <h1>Modal</h1>
+        <h4>
+            Ventana de diálogo superpuesta que centra la atención del usuario en contenido específico. Ideal para interacciones importantes que requieren atención inmediata.
+        </h4>
+        <br><br>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Abrir modal de demostración
+    </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        :v
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+    <br />
+    <br />
+    <div class="container">
+        <br><br>
+        <h1>Navbar</h1>
+        <br>
+        <h4>
+            Barra de navegación principal que proporciona acceso rápido a las secciones más importantes del sitio. Se adapta a diferentes tamaños de pantalla manteniendo la accesibilidad.
+        </h4>
+        <br><br>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <br />
+    <br />
+
+    <div class="container">
+        <br><br>
+        <h1>Navs and tabs</h1>
+        <br>
+        <h4>Sistema de navegación versátil que organiza el contenido en pestañas o secciones fácilmente accesibles. Permite alternar entre diferentes vistas sin cambiar de página, mejorando la experiencia del usuario y optimizando el espacio disponible.</h4>
+        <br><br>
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Activo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Enlace</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Enlace</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Desactivado</a>
+            </li>
+        </ul>
+        <br><br><br>
+    </div>
+    <br />
+    <br />
+    <div class="container">
+        <br><br>
+        <h1>Offcanvas</h1>
+        <br>
+        <h4>
+            Panel deslizable que emerge desde los bordes de la pantalla, proporcionando acceso a contenido secundario sin interrumpir la experiencia principal del usuario.
+        </h4>
+        <br><br>
+
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+      Enlace con href
+    </a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      Botón con data-bs-target
+    </button>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    Algún texto como marcador de posición. En la vida real puedes tener los elementos que elijas: texto, imágenes, listas, etc.
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Botón desplegable
+          </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                        <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+
+    </div>
+    <br />
+    <br />
+
+    <div class="container">
+        <br><br>
+        <h1>Pagination</h1>
+        <br>
+        <h4>
+            Sistema de navegación secuencial que divide grandes conjuntos de datos en páginas manejables, mejorando la experiencia de usuario al explorar contenido extenso.
+        </h4>
+        <br><br>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br />
+    <br />
+    <div class="container">
+        <br><br>
+        <h1>Placeholders</h1>
+        <br>
+        <h4>
+            Elementos visuales temporales que mantienen la estructura del diseño mientras se carga el contenido real, reduciendo la percepción de tiempo de espera del usuario.
+        </h4>
+        <br><br>
+
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Algún texto de ejemplo rápido para complementar el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+                <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+            </div>
+        </div>
+
+        <div class="card" aria-hidden="true">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                </h5>
+                <p class="card-text placeholder-glow">
+                    <span class="placeholder col-7"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-6"></span>
+                    <span class="placeholder col-8"></span>
+                </p>
+                <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+    <div class="container">
+        <br><br>
+        <h1>Popovers</h1>
+        <br>
+        <h4>
+            Contenedores emergentes enriquecidos que muestran información contextual detallada al interactuar con elementos específicos de la interfaz.
+        </h4>
+        <br><br>
+
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+      Popover on top
+    </button>
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+      Popover on right
+    </button>
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+      Popover on bottom
+    </button>
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+      Popover on left
+    </button>
+        <br><br><br>
+
+    </div>
+    <br />
+    <br />
+    <div class="container">
+        <br><br>
+        <h1>Progress</h1>
+        <br>
+        <h4>El componente Progress, es una barra visual que puede llenarse parcialmente según el porcentaje completado.</h4>
+        <br><br>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 0%"></div>
+        </div>
+        <br>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 50%"></div>
+        </div>
+        <br>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 100%"></div>
+        </div>
+        <br>
+        <br><br><br>
+    </div>
+    <br />
+    <br />
+    <div class="container">
+        <br><br>
+        <h1>Scrollspy</h1>
+        <br>
+        <h4>El componente Scrollspy de Bootstrap permite que un elemento de navegación, como una barra de navegación o un menú lateral, resalte automáticamente las secciones activas a medida que el usuario hace scroll en la página.</h4>
+        <br><br>
+
+        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+            <a class="navbar-brand" href="#">Barra</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">Primero</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Segundo</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Desplegable</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading5">Quinto</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+            <h4 id="scrollspyHeading1">First heading</h4>
+            <p>...</p>
+            <h4 id="scrollspyHeading2">Second heading</h4>
+            <p>...</p>
+            <h4 id="scrollspyHeading3">Third heading</h4>
+            <p>...</p>
+            <h4 id="scrollspyHeading4">Fourth heading</h4>
+            <p>...</p>
+            <h4 id="scrollspyHeading5">Fifth heading</h4>
+            <p>...</p>
+        </div>
+
+        <br />
+        <br />
+
+
+    </div>
+
+    <div class="container">
+        <br><br>
+        <h1>Spinners</h1>
+        <br>
+        <h4>Los Spinners son animaciones simples que indican que una acción o proceso está en curso o cargando en segundo plano.
+        </h4>
+        <br><br>
+
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+        <div class="spinner-border text-secondary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+        <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+        <div class="spinner-border text-danger" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+        <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+        <br><br><br>
+    </div>
+    <br />
+    <br />
+    <div class="container">
+        <br><br>
+        <h1>Toasts</h1>
+        <br>
+        <h4>Los Toasts son pequeñas ventanas emergentes de notificación que se usan para mostrar mensajes breves e informativos.
+        </h4>
+        <h5>Ejemplo de uso al iniciar la pagina </h5>
+        <br>
+
+        <!-- contenedor recomendado y toast -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        ¡Hola! Este es un mensaje de notificación.
+                    </div>
+                    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- inicializar y mostrar el toast al cargar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toastEl = document.getElementById('liveToast');
+            if (toastEl && window.bootstrap) {
+                const toast = new bootstrap.Toast(toastEl, {
+                    autohide: false
+                }); // autohide true por defecto
+                toast.show();
+            }
+        });
+    </script>
+
+    <div class="container">
+        <br><br>
+        <h1>Tooltips</h1>
+        <br>
+        <h4>
+            Ayudas contextuales que aparecen al interactuar con elementos de la interfaz, proporcionando información adicional de manera discreta y efectiva.
+        </h4>
+        <br><br>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+<script src="./assets/bootstrap/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+
+</html>
